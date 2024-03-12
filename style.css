@@ -1,4 +1,3 @@
-
 body {
   margin: auto;
   background: rgb(2,1,23);
@@ -11,7 +10,11 @@ body {
   background-color: #333; /* Set your desired background color */
   z-index: 100; /* Add a z-index to ensure it's above other content */
 }
-
+@media only screen and (max-width: 700px) {
+  .topnav{
+    display: none;
+  }
+}  
 .topnav a {
   margin-top:0;
   float: right;
@@ -314,8 +317,8 @@ hr {
   }
   @media (max-width: 768px) {
     .box1 {
-      /* Adjust styles for smaller screens */
-      width: 100%; /* Make the width 100% to fill the container */
+      margin-left: 10px;
+      width: 85%; /* Make the width 100% to fill the container */
       height: auto; /* Allow the height to adjust based on content */
       margin-bottom: 20px; /* Add some space between the boxes */
     }
@@ -370,16 +373,11 @@ hr {
   
   }
   
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 600px) {
     .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
-    }
-  }
-  
-  @media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
+      display: block;
+      width: 85%;
+      margin: 10px ;
     }
   }  
 .copyright {
@@ -715,5 +713,76 @@ ul li {
     padding-left: 10px; /* Decrease the spacing for the custom bullet on smaller screens */
   }
 }
-
+@media only screen and (max-width: 700px) {
+  .body{
+    width: fit-content;
+    height: auto;
+  }
+  .intro{
+    display: block;
+    margin-left: 2px;
+    margin-top: 50px;
+  }
+  .light{
+    display: block;
+    margin-left: 2px;
+  }
+  .main_header{
+    margin-left: 2px;
+  }
+  .animated-element_profile img{
+    margin-top: 50px;
+    margin-right: 40px;
+    width: 200px;
+    height: auto;
+  }
+  .container{
+    display: block;
+  }
+  .about{
+    display: block;
+    font-size: 15px;
+  }
+  p{
+    display: block;
+    margin: 5px;
+  }
+  .container3{
+    margin-left: 20px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .skill-bars{
+    margin-left: -20px;
+  }
+  .skill-bar-progress,.skill-bar-fill{
+    width: 80%;
+    height: 8px;
+  }
+  .box2{
+    display: block;
+    margin-top: -100px;
+  }
+  .box3{
+    display: block;
+    margin-top: -250px;
+  }
+  .box2 h1{
+    font-size: 25px;
+    margin-left: 10px;
+  }
+  .box2 p{
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  ul{
+    font-size: 20px;
+    display: block;
+    margin-left: 0px;
+  }
+  .remove{
+    display: none;
+  }
+}
 /* Add more media queries as needed for other screen sizes */
