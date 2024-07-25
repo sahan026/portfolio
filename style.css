@@ -315,7 +315,7 @@ h1 {
     gap: 20px;
   }
   .box {
-    width: 150px;
+    width: auto;
     height: 40px;
     font-size: 15px;
     gap: 20px;
