@@ -252,6 +252,10 @@ nav a {
   background: #ffffff;
   color: rgb(0, 0, 0);
 }
+.fa-github {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+}
 .end {
   font-size: 30px;
   color: white;
@@ -276,6 +280,22 @@ h1 {
   font-size: 45px;
   color: white;
 }
+.btn {
+  background-color: transparent;
+  border: 2px solid yellow;
+  width: 350px;
+  height: 35px;
+  color: yellow;
+  font-size: 28px;
+  margin-top: 35px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
 @media (max-width: 576px) {
   .iconset .poster {
     width: 120px;
@@ -359,5 +379,10 @@ h1 {
   }
   nav a {
     font-size: 15px;
+  }
+  .btn {
+    width: 200px;
+    font-size: 18px;
+    height: 25px;
   }
 }
