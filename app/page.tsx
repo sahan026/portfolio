@@ -257,7 +257,7 @@ export default function Home() {
             All Creative Works,<br />
             Selected Projects.
           </h3>
-          <a href="https://github.com/sahanHansaja026">Explore More →</a>
+          <a href="https://github.com/sahanHansaja026?tab=repositories">Explore More →</a>
         </div>
         <div className="imagecontainers1">
           <div className="subimages">
