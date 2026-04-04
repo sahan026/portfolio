@@ -252,12 +252,12 @@ export default function Home() {
       </div>
       <div className="row row-firstcolor3">
         <div className="fourthcontent">
-          <h6>- About Me</h6>
+          <h6>- My Work</h6>
           <h3>
             All Creative Works,<br />
             Selected Projects.
           </h3>
-          <a>Explore More →</a>
+          <a href="https://github.com/sahanHansaja026">Explore More →</a>
         </div>
         <div className="imagecontainers1">
           <div className="subimages">
