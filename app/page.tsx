@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState, FormEvent } from "react";
 
 export default function Home() {
@@ -59,7 +60,8 @@ export default function Home() {
     const form = e.currentTarget;
     const data = new FormData(form);
 
-    const action ="https://docs.google.com/forms/d/e/1FAIpQLSfIaDreuILlvUQdVWKooEdp8iEfEWAfD8v7W5k_VpUJ6IP1kA/formResponse";
+    const action =
+      "https://docs.google.com/forms/d/e/1FAIpQLSfIaDreuILlvUQdVWKooEdp8iEfEWAfD8v7W5k_VpUJ6IP1kA/formResponse";
 
     try {
       await fetch(action, {
@@ -224,8 +226,8 @@ export default function Home() {
               className="sectionicon"
             />
             <div className="selectparagraph">
-              <p>Project</p>
-              <p>Designer</p>
+              <p>AI/ML </p>
+              <p>Engineer</p>
             </div>
           </div>
           <div className="selectionbox">
@@ -323,6 +325,9 @@ export default function Home() {
             What’s new ?<br />
             My blog and news.
           </h3>
+          <Link href="/article" className="worka">
+            Read More →
+          </Link>
         </div>
         <div className="blog-list">
           <div className="blog-item">

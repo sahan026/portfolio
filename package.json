@@ -1,18 +1,20 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "private": true,"homepage": "https://sahan026.github.io/portfolio",
+  "private": true,
+  "homepage": "https://sahan026.github.io/portfolio",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "lint": "next lint",
     "export": "next build",
-   "out": "next build && echo > ./out/.nojekyll",
+    "out": "next build && echo > ./out/.nojekyll",
     "predeploy": "npm run out",
     "deploy": "npm run predeploy && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.13",
+    "link-preview-js": "^4.0.0",
     "next": "15.5.4",
     "react": "19.1.0",
     "react-dom": "19.1.0"
