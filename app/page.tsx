@@ -59,8 +59,7 @@ export default function Home() {
     const form = e.currentTarget;
     const data = new FormData(form);
 
-    const action =
-      "https://docs.google.com/forms/d/e/1FAIpQLSd08_5tv2FVAghqLuWLLBOCb82EZQ5STn1p5zBt6llk_MIhMA/formResponse";
+    const action ="https://docs.google.com/forms/d/e/1FAIpQLSfIaDreuILlvUQdVWKooEdp8iEfEWAfD8v7W5k_VpUJ6IP1kA/formResponse";
 
     try {
       await fetch(action, {
@@ -118,7 +117,6 @@ export default function Home() {
     images.forEach((img) => observer.observe(img));
   }, []);
 
-  
   return (
     <main>
       {/* First row: Hero section */}
@@ -130,7 +128,6 @@ export default function Home() {
             <a href="#">Content</a>
           </div>
         </div>
-
       </div>
       <div className="row row-firstcolor02">
         <div className="splitcontent">
@@ -142,7 +139,8 @@ export default function Home() {
           <div className="secondcontent">
             <h6>- Introduction</h6>
             <h5>
-              Full Stack Developer and UX/UI Designer, base in<br />
+              Full Stack Developer and UX/UI Designer, base in
+              <br />
               Sri Lanka
             </h5>
             <p>{displayedText}</p>
@@ -151,17 +149,23 @@ export default function Home() {
         </div>
       </div>
 
-
       {/* Second row */}
       <div className="row row-secondcolor">
         <div className="secflexcontent">
           <div className="thiredcontent">
             <h6>- About Me</h6>
-            <p>“Hi, I’m Sahan Hansaja, a Software Engineering undergraduate at SLTC Research University. I love building modern web and mobile applications, exploring AI integration, and solving real-world problems through technology”</p>
+            <p>
+              “Hi, I’m Sahan Hansaja, a Software Engineering undergraduate at
+              SLTC Research University. I love building modern web and mobile
+              applications, exploring AI integration, and solving real-world
+              problems through technology”
+            </p>
 
             <br />
             <Image
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/profile.png`}
+              src={`${
+                process.env.NEXT_PUBLIC_BASE_PATH || ""
+              }/images/profile.png`}
               alt="My Profile"
               width={240}
               height={250}
@@ -171,7 +175,9 @@ export default function Home() {
           <div className="thedetails">
             <div className="additem">
               <Image
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/pluse.png`}
+                src={`${
+                  process.env.NEXT_PUBLIC_BASE_PATH || ""
+                }/images/pluse.png`}
                 alt="My Profile"
                 width={45}
                 height={50}
@@ -181,7 +187,9 @@ export default function Home() {
             </div>
             <div className="additem">
               <Image
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/pluse.png`}
+                src={`${
+                  process.env.NEXT_PUBLIC_BASE_PATH || ""
+                }/images/pluse.png`}
                 alt="My Profile"
                 width={45}
                 height={50}
@@ -191,7 +199,9 @@ export default function Home() {
             </div>
             <div className="additem">
               <Image
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/pluse.png`}
+                src={`${
+                  process.env.NEXT_PUBLIC_BASE_PATH || ""
+                }/images/pluse.png`}
                 alt="My Profile"
                 width={45}
                 height={50}
@@ -201,15 +211,13 @@ export default function Home() {
             </div>
           </div>
         </div>
-
       </div>
-      <div className="row row-firstcolor2">
-      </div>
+      <div className="row row-firstcolor2"></div>
       <div className="row row-firstcolor">
         <div className="selctionboxcontainer">
           <div className="selectionbox">
             <Image
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/box.png`}
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/box.png`}
               alt="My Profile"
               width={55}
               height={60}
@@ -222,7 +230,7 @@ export default function Home() {
           </div>
           <div className="selectionbox">
             <Image
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/pen.png`}
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/pen.png`}
               alt="My Profile"
               width={55}
               height={60}
@@ -236,7 +244,9 @@ export default function Home() {
           <a href="https://youtube.com/@baniya-mark?si=t2mlz73lO-WjfYKD">
             <div className="selectionbox">
               <Image
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/youtube.png`}
+                src={`${
+                  process.env.NEXT_PUBLIC_BASE_PATH || ""
+                }/images/youtube.png`}
                 alt="My Profile"
                 width={55}
                 height={60}
@@ -254,15 +264,23 @@ export default function Home() {
         <div className="fourthcontent">
           <h6>- My Work</h6>
           <h3>
-            All Creative Works,<br />
+            All Creative Works,
+            <br />
             Selected Projects.
           </h3>
-          <a href="https://github.com/sahanHansaja026?tab=repositories">Explore More →</a>
+          <a
+            className="worka"
+            href="https://github.com/sahanHansaja026?tab=repositories"
+          >
+            Explore More →
+          </a>
         </div>
         <div className="imagecontainers1">
           <div className="subimages">
             <Image
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/image1.png`}
+              src={`${
+                process.env.NEXT_PUBLIC_BASE_PATH || ""
+              }/images/image1.png`}
               alt="My Profile"
               fill
               className="object-cover"
@@ -274,7 +292,9 @@ export default function Home() {
         <div className="seconimage">
           <div className="subimages">
             <Image
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/image2.png`}
+              src={`${
+                process.env.NEXT_PUBLIC_BASE_PATH || ""
+              }/images/image2.png`}
               alt="My Profile"
               fill
               className="object-cover"
@@ -286,7 +306,9 @@ export default function Home() {
         <div className="thirdimage">
           <div className="subimages">
             <Image
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/image3.png`}
+              src={`${
+                process.env.NEXT_PUBLIC_BASE_PATH || ""
+              }/images/image3.png`}
               alt="My Profile"
               fill
               className="object-cover"
@@ -304,52 +326,106 @@ export default function Home() {
         </div>
         <div className="blog-list">
           <div className="blog-item">
-            <span className="blog-date"><a href="https://medium.com/@sahanhansaja026/️-smart-parking-detection-using-esp32-fastapi-postgresql-0cf20c1e64fe">Sep 08 . Blog</a></span>
-            <span className="blog-title"><a href="https://medium.com/@sahanhansaja026/️-smart-parking-detection-using-esp32-fastapi-postgresql-0cf20c1e64fe">Smart Parking Detection using ESP32, FastAPI & PostgreSQL</a></span>
-            <span className="blog-arrow"><a href="https://medium.com/@sahanhansaja026/️-smart-parking-detection-using-esp32-fastapi-postgresql-0cf20c1e64fe">→</a></span>
+            <span className="blog-date">
+              <a href="https://medium.com/@sahanhansaja026/️-smart-parking-detection-using-esp32-fastapi-postgresql-0cf20c1e64fe">
+                Sep 08 . Blog
+              </a>
+            </span>
+            <span className="blog-title">
+              <a href="https://medium.com/@sahanhansaja026/️-smart-parking-detection-using-esp32-fastapi-postgresql-0cf20c1e64fe">
+                Smart Parking Detection using ESP32, FastAPI & PostgreSQL
+              </a>
+            </span>
+            <span className="blog-arrow">
+              <a href="https://medium.com/@sahanhansaja026/️-smart-parking-detection-using-esp32-fastapi-postgresql-0cf20c1e64fe">
+                →
+              </a>
+            </span>
           </div>
 
           <div className="blog-item">
-            <span className="blog-date"><a href="https://medium.com/@sahanhansaja026/creating-a-backend-with-mongodb-and-firebase-6f192a1abfc9">May 06 . Blog</a></span>
-            <span className="blog-title"><a href="https://medium.com/@sahanhansaja026/creating-a-backend-with-mongodb-and-firebase-6f192a1abfc9">Creating a Backend with MongoDB and Firebase: File Storage Meets Data Management</a></span>
-            <span className="blog-arrow"><a href="https://medium.com/@sahanhansaja026/creating-a-backend-with-mongodb-and-firebase-6f192a1abfc9">→</a></span>
+            <span className="blog-date">
+              <a href="https://medium.com/@sahanhansaja026/creating-a-backend-with-mongodb-and-firebase-6f192a1abfc9">
+                May 06 . Blog
+              </a>
+            </span>
+            <span className="blog-title">
+              <a href="https://medium.com/@sahanhansaja026/creating-a-backend-with-mongodb-and-firebase-6f192a1abfc9">
+                Creating a Backend with MongoDB and Firebase: File Storage Meets
+                Data Management
+              </a>
+            </span>
+            <span className="blog-arrow">
+              <a href="https://medium.com/@sahanhansaja026/creating-a-backend-with-mongodb-and-firebase-6f192a1abfc9">
+                →
+              </a>
+            </span>
           </div>
 
           <div className="blog-item">
-            <span className="blog-date"><a href="https://youtu.be/F4Yb2p6bK7k">Apr 26 . Vlog</a></span>
-            <span className="blog-title"><a href="https://youtu.be/F4Yb2p6bK7k">Deploying My React App with GitHub Actions & AWS S3 What I Learned</a></span>
-            <span className="blog-arrow"><a href="https://youtu.be/F4Yb2p6bK7k">→</a></span>
+            <span className="blog-date">
+              <a href="https://youtu.be/F4Yb2p6bK7k">Apr 26 . Vlog</a>
+            </span>
+            <span className="blog-title">
+              <a href="https://youtu.be/F4Yb2p6bK7k">
+                Deploying My React App with GitHub Actions & AWS S3 What I
+                Learned
+              </a>
+            </span>
+            <span className="blog-arrow">
+              <a href="https://youtu.be/F4Yb2p6bK7k">→</a>
+            </span>
           </div>
 
           <div className="blog-item">
-            <span className="blog-date"><a href="https://medium.com/@sahanhansaja026/building-a-dynamic-search-bar-for-a-mern-stack-website-cefd966da536">Sep 09 . Blog</a></span>
-            <span className="blog-title"><a href="https://medium.com/@sahanhansaja026/building-a-dynamic-search-bar-for-a-mern-stack-website-cefd966da536">Dynamic Search Bar for a MERN Stack Website</a></span>
-            <span className="blog-arrow"><a href="https://medium.com/@sahanhansaja026/building-a-dynamic-search-bar-for-a-mern-stack-website-cefd966da536">→</a></span>
+            <span className="blog-date">
+              <a href="https://medium.com/@sahanhansaja026/building-a-dynamic-search-bar-for-a-mern-stack-website-cefd966da536">
+                Sep 09 . Blog
+              </a>
+            </span>
+            <span className="blog-title">
+              <a href="https://medium.com/@sahanhansaja026/building-a-dynamic-search-bar-for-a-mern-stack-website-cefd966da536">
+                Dynamic Search Bar for a MERN Stack Website
+              </a>
+            </span>
+            <span className="blog-arrow">
+              <a href="https://medium.com/@sahanhansaja026/building-a-dynamic-search-bar-for-a-mern-stack-website-cefd966da536">
+                →
+              </a>
+            </span>
           </div>
         </div>
       </div>
       <div className="row row-firstcolor6">
         <div className="contactpage">
           <div className="sixthcontent">
-            <h6>- About Me</h6>
+            <h6>- Contact Me</h6>
             <h3>
               Got a project ?<br />
               Let’s talk.
             </h3>
-            <a href="mailto:sahanhansaja026@gmail.com?subject=Hello&body=Hi Sahan,">Email Me →</a>
+            <a href="mailto:sahanhansaja026@gmail.com?subject=Hello&body=Hi Sahan,">
+              Email Me →
+            </a>
           </div>
           <div className="contactinfo">
-            <h3>Estimate your project ?<br />
-              Let me know hear.</h3>
+            <h3>
+              Estimate your project ?<br />
+              Let me know hear.
+            </h3>
             <form onSubmit={handleSubmit}>
-              <div className="field">
-                <div className="lable">What’s your name ?</div>
-                <input type="text" name="entry.1191268187" required />
-              </div>
-
               <div className="field">
                 <div className="lable">What’s your Email ?</div>
                 <input type="email" name="entry.1389639083" required />
+              </div>
+              <div className="field">
+                <div className="lable">Tell me about your project ?</div>
+                <textarea
+                  name="message"
+                  rows={3}
+                  required
+                  className="textarea"
+                ></textarea>
               </div>
 
               <div className="field submitbtn">
@@ -357,10 +433,10 @@ export default function Home() {
               </div>
 
               {status === "success" && (
-                <p className="text-green-500 text-lg mt-2">😊</p>
+                <p className="mt-2 text-lg text-green-500">😊</p>
               )}
               {status === "error" && (
-                <p className="text-red-500 text-lg mt-2">😢</p>
+                <p className="mt-2 text-lg text-red-500">😢</p>
               )}
             </form>
           </div>
@@ -373,7 +449,9 @@ export default function Home() {
         <div className="iconbox">
           <a href="https://github.com/sahanHansaja026">
             <Image
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/github.png`}
+              src={`${
+                process.env.NEXT_PUBLIC_BASE_PATH || ""
+              }/images/github.png`}
               alt="github"
               width={35}
               height={35}
@@ -381,7 +459,9 @@ export default function Home() {
           </a>
           <a href="https://www.linkedin.com/in/sahan-hansaja-35502b256?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bt8f9pDeCSOCGOCvJVvJ1Dg%3D%3D">
             <Image
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/linkdin.png`}
+              src={`${
+                process.env.NEXT_PUBLIC_BASE_PATH || ""
+              }/images/linkdin.png`}
               alt="linkdin"
               width={35}
               height={35}
@@ -389,13 +469,14 @@ export default function Home() {
           </a>
           <a href="https://youtube.com/@baniya-mark?si=t2mlz73lO-WjfYKD">
             <Image
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/youtube.png`}
+              src={`${
+                process.env.NEXT_PUBLIC_BASE_PATH || ""
+              }/images/youtube.png`}
               alt="YouTube"
               width={35}
               height={35}
             />
           </a>
-
         </div>
       </div>
     </main>

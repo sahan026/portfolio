@@ -211,7 +211,11 @@ body {
     padding-left: 200px;
     margin-top: 25px;
 }
-
+.worka {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+}
 .selectionbox {
     width: 250px;
     height: 250px;
@@ -484,7 +488,8 @@ form .lable {
 }
 
 form input[type="text"],
-input[type="email"] {
+input[type="email"],
+form textarea {
     width: 100%;
     padding-top: 5px;
     margin: 4px 0;
