@@ -11,14 +11,18 @@ export default function Home() {
   // Typewriter effect
   useEffect(() => {
     let index = 0;
+  
     const interval = setInterval(() => {
-      setDisplayedText((prev) => prev + fullText[index]);
+      setDisplayedText(fullText.slice(0, index));
       index++;
-      if (index === fullText.length) clearInterval(interval);
+  
+      if (index > fullText.length) {
+        clearInterval(interval);
+      }
     }, 15);
   
     return () => clearInterval(interval);
-  }, [fullText]);
+  }, []);
 
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -120,6 +124,7 @@ export default function Home() {
           {[
             { img: "box.png", title: "AI/ML Engineer", desc: "Enthusiast & Python Specialist" },
             { img: "pen.png", title: "UI/UX Designer", desc: "Figma & Modern Interfaces" },
+            { img: "mobile.png", title: "Mobile App Developer", desc: "React Native & Flutter" },
             { img: "youtube.png", title: "Content Creator", desc: "Tech Vlogs & Tutorials", link: "https://youtube.com/@baniya-mark?si=t2mlz73lO-WjfYKD" }
           ].map((box, i) => {
             const CardWrap = box.link ? 'a' : 'div';
@@ -155,7 +160,8 @@ export default function Home() {
             {[
               "Passionate about building smart, real-world solutions",
               "Skilled in Python, MERN, and Flutter",
-              "AI & Machine Learning Enthusiast"
+              "AI & Machine Learning Enthusiast",
+              "Cloud & DevOps (AWS, Docker, CI/CD with GitHub Actions)"
             ].map((text, idx) => (
               <div key={idx} className="flex items-start gap-4 p-4 transition-all duration-700 ease-out translate-y-8 border opacity-0 reveal-on-scroll rounded-xl bg-neutral-900/60 border-neutral-850">
                 <Image src={`${basePath}/images/pluse.png`} alt="plus" width={24} height={24} className="mt-1 opacity-60" />
