@@ -1,8 +1,12 @@
 {
   "version": 4,
   "routes": {
-    "/_not-found": {
-      "initialStatus": 404,
+    "/favicon.ico": {
+      "initialHeaders": {
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-type": "image/x-icon",
+        "x-next-cache-tags": "_N_T_/layout,_N_T_/favicon.ico/layout,_N_T_/favicon.ico/route,_N_T_/favicon.ico/"
+      },
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -15,8 +19,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/_not-found",
-      "dataRoute": "/_not-found.rsc",
+      "srcRoute": "/favicon.ico",
+      "dataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -74,12 +78,8 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/favicon.ico": {
-      "initialHeaders": {
-        "cache-control": "public, max-age=0, must-revalidate",
-        "content-type": "image/x-icon",
-        "x-next-cache-tags": "_N_T_/layout,_N_T_/favicon.ico/layout,_N_T_/favicon.ico/route,_N_T_/favicon.ico/"
-      },
+    "/_not-found": {
+      "initialStatus": 404,
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -92,8 +92,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/favicon.ico",
-      "dataRoute": null,
+      "srcRoute": "/_not-found",
+      "dataRoute": "/_not-found.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -107,8 +107,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "ced794cad9636f1c829adc13f119b3ed",
-    "previewModeSigningKey": "f6c202ac32cac368249e931b33164f49180bbe15aa1ab071754fe7a2745cd2ef",
-    "previewModeEncryptionKey": "070439065b9a1da844aa552e6931cd5422419c62b5beaae924cf561fad1720c8"
+    "previewModeId": "c34b84ae1c2a732bb8368e0d34cae8ef",
+    "previewModeSigningKey": "b9e226ba5165fa0f741ae9231c4fe8219088cfdcaae91145022314607c060892",
+    "previewModeEncryptionKey": "c05c3bf936860fc3dcc31453f23e0b118f1743c0c7a833bbfbc4e2eb2fc889b5"
   }
 }
